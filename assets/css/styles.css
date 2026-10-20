@@ -2435,3 +2435,18 @@ transition:.2s;
 transform:translateY(-2px);
 box-shadow:0 12px 24px rgba(0,0,0,.35);
 }
+
+/* Portada móvil: mantener el encabezado en el flujo y eliminar la franja blanca del carrusel. */
+@media (max-width: 768px) {
+  body.site-premium .site-header {
+    position: sticky !important;
+  }
+
+  body.site-premium .main > .slider {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: 200px !important;
+    max-height: 200px !important;
+  }
+}
